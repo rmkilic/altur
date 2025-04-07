@@ -35,7 +35,7 @@ class CommonAppBar extends StatelessWidget implements PreferredSizeWidget {
       onTap: (){
         onTapFunction(navigateSettings);
         
-         // Get.to(() => SettingsView());
+       
 
       },
       child: ImageEnums.settings.imageWidget,
@@ -83,16 +83,16 @@ class CommonAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   onTapFunction(VoidCallback callback)
   {
-     // Eğer araç listesi boşsa, kullanıcıya bir mesaj göster.
+     
         if (vehicleController.vehicles.isEmpty) {
           _showNoVehicleDialog();
         } else {
-          // Araç varsa, VehicleListView sayfasına git.
+        
           callback();
         }
   }
 
-    // Araç eklenmesi gerektiğini bildiren bir dialog göster
+ 
   void _showNoVehicleDialog() {
     Get.dialog(
       AlertDialog(
